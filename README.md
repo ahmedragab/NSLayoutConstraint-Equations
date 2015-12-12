@@ -1,6 +1,6 @@
 # NSLayoutConstraint-Equations
 
-Swift library to create Auto Layout constraints programatically just like math equations and inequalities 
+Swift library to create Auto Layout constraints programatically just like math equations and inequalities
 
 # Usage
 
@@ -12,30 +12,52 @@ view.addConstraints(Top(label) == Top(button) |+ CenterX(label) == CenterX(self.
 
 ```
 
-use the form Attribute1(Item1) == multiplier * Attribute2(Item2) + constant
+use the form:
 
-# Attributes: 
+Attribute1(Item1) == multiplier * Attribute2(Item2) + constant
+
+### Attributes:
 
 Left
+
 Right
+
 Top
+
 Bottom
+
 Leading
+
 Trailing
+
 Width
+
 Height
+
 CenterX
+
 CenterY
-case Baseline
+
+Baseline
+
 LastBaseline
+
 FirstBaseline
+
 LeftMargin
+
 RightMargin
+
 TopMargin
+
 BottomMargin
+
 LeadingMargin
+
 TrailingMargin
+
 CenterXWithinMargins
+
 CenterYWithinMargins
 
 you can append constraints using operator |+
