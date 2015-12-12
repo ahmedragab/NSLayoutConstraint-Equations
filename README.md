@@ -16,48 +16,28 @@ use the form:
 
 Attribute1(Item1) == multiplier * Attribute2(Item2) + constant
 
-### Attributes:
+#### Attributes:
 
 Left
-
 Right
-
 Top
-
 Bottom
-
 Leading
-
 Trailing
-
 Width
-
 Height
-
 CenterX
-
 CenterY
-
 Baseline
-
 LastBaseline
-
 FirstBaseline
-
 LeftMargin
-
 RightMargin
-
 TopMargin
-
 BottomMargin
-
 LeadingMargin
-
 TrailingMargin
-
 CenterXWithinMargins
-
 CenterYWithinMargins
 
 you can append constraints using operator |+
