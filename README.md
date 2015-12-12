@@ -12,6 +12,32 @@ view.addConstraints(Top(label) == Top(button) |+ CenterX(label) == CenterX(self.
 
 ```
 
-use the form Attribute1(Item1) == or >= or <= multiplier * Attribute2(Item2) + constant
-you can append constraints using |+
+use the form Attribute1(Item1) == multiplier * Attribute2(Item2) + constant
+
+# Attributes: 
+
+Left
+Right
+Top
+Bottom
+Leading
+Trailing
+Width
+Height
+CenterX
+CenterY
+case Baseline
+LastBaseline
+FirstBaseline
+LeftMargin
+RightMargin
+TopMargin
+BottomMargin
+LeadingMargin
+TrailingMargin
+CenterXWithinMargins
+CenterYWithinMargins
+
+you can append constraints using operator |+
+
 also you can set priorities like (Constraint)|priority
