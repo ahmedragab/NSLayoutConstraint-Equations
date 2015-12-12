@@ -42,4 +42,4 @@ CenterYWithinMargins
 
 you can append constraints using operator |+
 
-also you can set priorities like (Constraint)|priority
+also you can set priorities like Constraint|priority
