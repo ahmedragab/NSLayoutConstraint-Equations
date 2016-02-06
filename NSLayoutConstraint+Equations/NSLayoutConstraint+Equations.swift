@@ -6,7 +6,11 @@
 //  Copyright © 2015 QuaNode. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
+#else
+import AppKit
+#endif
 
 public protocol QNLayoutConstraintOperand {
     
@@ -161,6 +165,8 @@ public class FirstBaseline : QNLayoutAttribute {
     }
 }
 
+#if os(iOS)
+    
 public class LeftMargin : QNLayoutAttribute {
     
     override public var attribute : NSLayoutAttribute {
@@ -224,6 +230,8 @@ public class CenterYWithinMargins : QNLayoutAttribute {
         return NSLayoutAttribute.CenterYWithinMargins
     }
 }
+    
+#endif
 
 public func * (left : CGFloat, var right : QNLayoutConstraintOperand) -> QNLayoutConstraintOperand {
     
