@@ -313,7 +313,13 @@ func |+ (var left : [NSLayoutConstraint], right : NSLayoutConstraint) -> [NSLayo
     return left
 }
 
-func | (left : NSLayoutConstraint, right : UILayoutPriority) -> NSLayoutConstraint {
+#if os(iOS)
+typealias LayoutPriority = UILayoutPriority
+#else
+typealias LayoutPriority = NSLayoutPriority
+#endif
+
+func | (left : NSLayoutConstraint, right : LayoutPriority) -> NSLayoutConstraint {
     
     left.priority = right
     return left
